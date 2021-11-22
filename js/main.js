@@ -31,13 +31,13 @@ $(function () {
 // gnavの設定 クリックしたら、gnavが現れる
 
 $(".openbtn").on("click", function () {
-  $("#g-nav").toggleClass('panelactive');
-  $("closed-btn").toggleClass('active');
+  $("#g-nav").addClass('panelactive');
+  $(".closed-btn").addClass('active');
 });
 
 $(".closed-btn,#g-nav a").on("click", function () {
   $("#g-nav").removeClass('panelactive');
-  // $("closed-btn").removeClass('active');
+  $(".closed-btn").removeClass('active');
 });
 
 
