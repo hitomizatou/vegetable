@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-family: 'Noto Sans JP', "游明朝", Yumincho, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, sans-serif;
+  font-family: 'Noto Sans JP', "Noto selif JP", "游明朝", Yumincho, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, sans-serif;
 }
 
 /* 各セクションの見出し共通設定 */
@@ -180,11 +180,24 @@ header {
   cursor: pointer;
 }
 
+
 .menu {
   position: absolute;
   top: 110px;
   left: -10px;
   transform: rotate(90deg);
+
+}
+
+@media (max-width: 767px) {
+  .openbtn {
+    width: 30px;
+  }
+
+  .menu {
+    top: 65px;
+    font-size: 0.7rem;
+  }
 
 }
 
@@ -286,6 +299,8 @@ nav ul li a:hover {
 }
 
 
+
+
 @keyframes arrowmove {
   0% {
     bottom: 1%;
@@ -309,6 +324,12 @@ nav ul li a:hover {
   font-size: 1rem;
   letter-spacing: 0.05em;
   writing-mode: vertical-rl;
+}
+
+@media (max-width: 767px) {
+  .scrolldown span {
+    font-size: 0.7rem;
+  }
 }
 
 /* 矢印の描写 */
