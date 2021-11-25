@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Noto selif JP", "游明朝", Yumincho, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, serif;
+  font-family: "Noto selif JP", 'Helvetica', 'Arial', "游明朝", serif;
 }
 
 /* 各セクションの見出し共通設定 */
