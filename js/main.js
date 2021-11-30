@@ -57,3 +57,29 @@ $(function () {
   });
 });
 
+
+//* smooth scroller
+//*-------------------------------------------------------*/
+
+$(function () {
+  $('a[href*="#"]').on('click', function () {
+    var hash = this.hash;
+    if (!hash || hash == '#') {
+      return false;
+    }
+    var offset = $(hash).offset();
+    if (!offset) {
+      return true;
+    }
+
+    //メニュー除く
+    var menu_height = 0;
+    //        if ($('.header.fixed').length){
+    //            var menu_height = $('.header.fixed').outerHeight();
+    //        }
+
+    $('body,html').animate({ scrollTop: (offset.top - menu_height) }, 800, 'swing');
+    return false;
+  });
+});
+
